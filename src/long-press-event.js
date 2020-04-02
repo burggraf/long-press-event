@@ -171,6 +171,11 @@
      * @returns {void}
      */
     function mouseDownHandler(e) {
+        console.log('*** mouseDownHandler event (target, srcElement, detail');
+        console.log(e.target);
+        console.log(e.srcElement);
+        console.log(e.detail);
+        console.log('*******************************************************');
         startX = e.clientX;
         startY = e.clientY;
         startLongPressTimer(e);
