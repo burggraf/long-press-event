@@ -176,6 +176,9 @@
         console.log(e.srcElement);
         console.log(e.detail);
         console.log('*******************************************************');
+        if (e.targetTouches && e.targetTouches[0]) {
+            e = e.targetTouches[0];
+        }
         startX = e.clientX;
         startY = e.clientY;
         startLongPressTimer(e);
